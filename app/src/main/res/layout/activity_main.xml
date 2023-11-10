@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="**INSCRIPTION**"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN :"
+        android:id="@+id/tv_login_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_children_login"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PASSWORD :"
+        android:id="@+id/tv_main_pwd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_children_pwd"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMAIL :"
+        android:id="@+id/tv_email_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_children_email"/>
+    <Button
+        android:id="@+id/bt_Ecrire_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="==> Ecrire !"
+        android:onClick="xmlClickEvent" />
+    <Button
+        android:id="@+id/bt_Lire_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="==> Lire"
+        android:onClick="xmlClickEvent" />
+    <Button
+        android:id="@+id/bt_LireLogin_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="==> Lire ce Login"
+        android:onClick="xmlClickEvent" />
+    <Button
+        android:id="@+id/bt_wbHeh_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="xmlClickEvent"
+        android:text="==> Site HEH - DST"
+        android:background="#FF00FF00"/>
+</LinearLayout>
